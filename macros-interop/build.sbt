@@ -2,14 +2,13 @@ import sbt.Keys._
 
 name := "macros-interop"
 
-scalacOptions ++= Seq("-Ymacro-debug-lite")
-
 val scalaVer = "2.11.6"
 
 lazy val commonSettings = Seq(
   organization := "com.practicingtechie",
   version := "0.1",
-  scalaVersion := scalaVer
+  scalaVersion := scalaVer,
+  scalacOptions ++= Seq("-Ymacro-debug-lite", "-deprecation")
 )
 
 lazy val mymacros = project.
