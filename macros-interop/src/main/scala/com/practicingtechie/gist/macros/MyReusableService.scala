@@ -4,5 +4,5 @@ import scala.language.experimental.macros
 
 object MyReusableService {
   def macroMethod: Unit = macro MyMacros.impl
-  def regularMethod = println("foobar")
+  def regularMethod = println("Hello, from regular method")
 }
